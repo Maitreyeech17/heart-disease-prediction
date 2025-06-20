@@ -1,12 +1,12 @@
-# Heart Disease Prediction Using Logistic Regression
+# Intelligent Network Congestion Detection using Explainable ML
 
-This project predicts the likelihood of heart disease in patients using logistic regression, based on the Framingham Heart Study dataset.
+This project uses machine learning to detect and predict congestion in simulated network traffic data. It integrates SHAP for explainability and provides interactive visualizations via a dashboard.
 
 ## Features
-- Exploratory Data Analysis (EDA)
-- Data preprocessing
-- Logistic Regression model
-- Model evaluation (accuracy, confusion matrix, classification report)
+- Simulated network traffic data with features like packet loss, jitter, latency, and throughput
+- ML model training for congestion detection (Random Forest/XGBoost)
+- SHAP-based feature importance and explainability
+- Interactive dashboard for model insights
 
 ## Setup
 1. Clone this repository or download the files.
@@ -16,9 +16,14 @@ This project predicts the likelihood of heart disease in patients using logistic
    ```
 
 ## Usage
-Run the script:
+### Run the main script (training and SHAP analysis):
 ```
-python heart_disease_prediction.py
+python network_congestion_detection.py
 ```
 
-The script will load the dataset, perform EDA, train the model, and print evaluation metrics. 
+### Launch the interactive dashboard:
+```
+streamlit run dashboard.py
+```
+
+The dashboard will open in your browser, showing model predictions and SHAP explanations. 
